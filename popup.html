@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeZap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="logo-container">
+    <img src="logo.png" alt="CodeZap Logo" class="logo">
+</div>
+<div class="tab-container">
+    <ul class="tabs">
+        <li class="tab-link active" data-tab="tab-xml">XML</li>
+        <li class="tab-link" data-tab="tab-yaml">YAML</li>
+        <li class="tab-link" data-tab="tab-color">Color</li>
+        <li class="tab-link" data-tab="tab-minify">Minify/Unminify</li>
+    </ul>
+    <div id="tab-xml" class="tab-content active">
+        <div class="button-container">
+            <button id="xmlToJsonBtn">XML to JSON</button>
+            <button id="jsonToXmlBtn">JSON to XML</button>
+        </div>
+    </div>
+    <div id="tab-yaml" class="tab-content">
+        <div class="button-container">
+            <button id="yamlToJsonBtn">YAML to JSON</button>
+            <button id="jsonToYamlBtn">JSON to YAML</button>
+        </div>
+    </div>
+    <div id="tab-color" class="tab-content">
+        <div class="color-converter">
+            <div class="input-group">
+                <label for="colorInput">Hex color code:</label>
+                <input type="text" id="colorInput" placeholder="Enter Hex color...">
+            </div>
+            <div class="button-container">
+                <button id="hexToRgbBtn">Hex to RGB</button>
+            </div>
+            <div class="rgb-fields">
+                <div class="field-group">
+                    <label>Red (0-255):</label>
+                    <input type="text" id="red255" readonly>
+                </div>
+                <div class="field-group">
+                    <label>Green (0-255):</label>
+                    <input type="text" id="green255" readonly>
+                </div>
+                <div class="field-group">
+                    <label>Blue (0-255):</label>
+                    <input type="text" id="blue255" readonly>
+                </div>
+            </div>
+            <div class="rgb-fields">
+                <div class="field-group">
+                    <label>Red (0-1):</label>
+                    <input type="text" id="red1" readonly>
+                </div>
+                <div class="field-group">
+                    <label>Green (0-1):</label>
+                    <input type="text" id="green1" readonly>
+                </div>
+                <div class="field-group">
+                    <label>Blue (0-1):</label>
+                    <input type="text" id="blue1" readonly>
+                </div>
+            </div>
+            <div class="css-color">
+                <label>CSS color (0-255):</label>
+                <div class="copy-wrapper">
+                    <input type="text" id="cssRgb255" readonly>
+                    <button id="copyCssRgbBtn">Copy</button>
+                </div>
+            </div>
+            <div class="css-color">
+                <label>CSS color (0%-100%):</label>
+                <input type="text" id="cssRgbPercent" readonly>
+            </div>
+            <div class="color-preview">
+                <label>Color preview:</label>
+                <div id="colorPreview"></div>
+            </div>
+        </div>
+    </div>
+    <div id="tab-minify" class="tab-content">
+        <div class="button-container">
+            <button id="minifyBtn">Minify</button>
+            <button id="unminifyBtn">Unminify</button>
+        </div>
+    </div>
+    <div class="textarea-container">
+        <div class="textarea-wrapper">
+            <label id="labelInput" for="input">Input:</label>
+            <textarea id="input" placeholder="Enter your code here..."></textarea>
+        </div>
+        <div class="textarea-wrapper">
+            <label for="output">Output:</label>
+            <div id="output" class="output-box"></div>
+            <button id="copyOutputBtn"><i class="fas fa-copy"></i> Copy Output</button>
+        </div>
+    </div>
+</div>
+<div id="notification" class="notification"></div>
+<script src="scripts/js-yaml.min.js"></script>
+<script src="scripts/xml2js.min.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

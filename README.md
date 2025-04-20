@@ -10,7 +10,7 @@ Minify/Unminify: Minify or unminify JSON, XML, and YAML.
 
 Installation
 
-Clone or download this repository:git clone https://github.com/[YourUsername]/CodeZap.git
+Clone or download this repository:git clone https://github.com/amrnima/CodeZap.git
 
 
 Open your browser and go to the extensions page:
@@ -34,4 +34,4 @@ Feel free to fork this repository, make changes, and submit a pull request. Any 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 Contact
-If you have any questions or suggestions, feel free to open an issue on GitHub or contact me at [amirinima04@gmail.com].
+If you have any questions or suggestions, feel free to open an issue on GitHub or contact me at amirinima04@gmail.com.

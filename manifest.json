@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "CodeZap",
+  "version": "1.0.0",
+  "description": "A utility extension for converting code formats (XML, YAML, Color, Minify/Unminify).",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["icon128.png", "logo.png", "style.css", "scripts/js-yaml.min.js", "scripts/xml2js.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": [
+    "clipboardWrite"
+  ]
+}

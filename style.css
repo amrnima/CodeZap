@@ -1,0 +1,268 @@
+body {
+    width: 600px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.tab-container {
+    margin-bottom: 15px;
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 14px 0;
+    border-bottom: 1px solid #ccc;
+    justify-content: center;
+}
+
+.tab-content,
+.textarea-wrapper,
+.output-box,
+.input-group input {
+    border-radius: 8px;
+}
+
+.tab-link {
+    padding: 8px 15px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+}
+
+.tab-link:hover {
+    background-color: #f0f0f0;
+}
+
+.tab-link.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    padding: 10px 0;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+.textarea-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.textarea-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+textarea,
+.output-box {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: monospace;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+.output-box {
+    background-color: #f9f9f9;
+    overflow-y: auto;
+    white-space: pre-wrap;
+}
+
+.color-converter {
+    margin-top: 15px;
+}
+
+.rgb-fields {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.field-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.field-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.field-group input,
+.css-color input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.css-color {
+    margin-bottom: 10px;
+}
+
+.css-color label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.color-preview {
+    margin-top: 10px;
+}
+
+.color-preview label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#colorPreview {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.copy-wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+#copyCssRgbBtn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#copyCssRgbBtn:hover {
+    background-color: #218838;
+}
+.logo-container {
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    width: auto;
+    height: 48px;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+.tab-link.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+    background-color: #f0f7ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#copyOutputBtn i {
+    margin-right: 5px;
+}
+
+.notification {
+    /*position: relative;*/
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: none;
+}
+
+.notification.show {
+    display: block;
+    opacity: 1;
+}

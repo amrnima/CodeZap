@@ -1,0 +1,9 @@
+CodeZap/
+├── popup.html
+├── style.css
+├── popup.js
+├── icon128.png
+├── scripts/
+│   ├── js-yaml.min.js
+│   └── xml2js.min.js
+├── manifest.json
